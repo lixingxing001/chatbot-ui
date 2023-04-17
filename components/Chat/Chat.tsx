@@ -125,7 +125,9 @@ export const Chat: FC<Props> = ({
                   <div className="text-center text-4xl font-semibold text-gray-800 dark:text-gray-100">
                     {models.length === 0 ? t('Loading...') : 'Hero AI'}
                   </div>
-
+                  <div className="text-center text-1xl font-semibold text-gray-800 dark:text-gray-100">
+                    {models.length === 0 ? t('Loading...') : '有问题联系管理员, 微信号: HeyYou_Bro'}
+                  </div>
                   {models.length > 0 && (
                     <div className="flex h-full flex-col space-y-4 rounded border border-neutral-500 p-4">
                       <ModelSelect
